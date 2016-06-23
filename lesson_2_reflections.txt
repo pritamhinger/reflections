@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+It create a hidden folder .git containing all the metadata information about the repository directory and its content.
