@@ -7,3 +7,32 @@ How is the staging area different from the working directory and the repository?
 
 Staging area is the space between working directory and repository. Staging area give us a place where we can add all the file which 
 we think of as a logical change to be included in single commit. Also, according to me, it  provide a precautionary check before we commit.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Often a feature or bug fix require code changes in multiple files and at the same time we can work on one or more feature/bug fix at same time.
+Thus using staging area we can selectively add code file related to a feature / bug fix 
+(which is a logical group quilifying for a single commit) 
+and can commit those files in one go thus grouping the logical change.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A branch would be helpful when i am making a change in code which i am not sure if it would break things or not or on contrary say i am not sure if it would work or not. Thus i would want to work on a separate branch so as to not get in way with other developers and only when i am sure of my changes , i would merge those changes in master or main branch.  Thus branch help me to try my experiments with out being coming in way of other developers working on active/main/master branch.
+
+How do the diagrams help you visualize the branch structure?
+
+Digram tells you how commits are linked to other commits done in past. Diagram also lets us know of state of branches and what all commits a branch contains.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging give us a state of repository where we have all the changes in one place (changes of both branches). generally we merge topic branch into working/active branch. Since merging give us a new commit point where 2 commits nodes converge into one, thus we have shown it in that particular way.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Cons of Automatic merging:
+In case of conflict, automatic merging is not useful as only developer have the context of the changes made to code. Thus manual merging should be followed in case of conflicts.
+
+Pros of Automatic merging:
+Time saving as  manual merging is error prone. Manual merging is only useful in case of resolving conflicts.
