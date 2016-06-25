@@ -1,0 +1,7 @@
+Q. When would you want to use a remote repository rather than keeping all your work
+local?
+
+Ans: When i want others to have a look at my work or i have a team of 2 or more people working on same code, then
+i definitely would want to use a remote repository. Also keeping all work locally can be dangerous as well as local
+machine may crash and we may loose all our data. Thus timely updating remote repository keeps your work safe and make 
+it easier for others to follow and contribute in your work.
