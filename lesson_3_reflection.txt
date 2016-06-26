@@ -5,3 +5,33 @@ Ans: When i want others to have a look at my work or i have a team of 2 or more 
 i definitely would want to use a remote repository. Also keeping all work locally can be dangerous as well as local
 machine may crash and we may loose all our data. Thus timely updating remote repository keeps your work safe and make 
 it easier for others to follow and contribute in your work.
+
+Q. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Ans: Manual pull give me liberty to pull changes when i feel i am ready for the changes from the remote reporisotry 
+to merge into or update my local repository as i might be in middle of some work and merging/updating without my knowledge
+may break things at my end. 
+
+Q. Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Ans: Branches are basically a forked out code base locally to make some experimental changes or some changes which should not be done on active branch. Branch give us a way to temporarily switch context from main/active branch and when the purpose is over either discard the changes or merge the changes in main/active branch.
+
+Clones are the copy of repository created locally to work. Clones help to collaborate with other developers. All team members can clone repository and work in parallel, when one member is done with his work he can push his/her changes to remote server. Other developers can pull out those changes as per thier will and thus many team members can work together in sync on same code base and can contribute to same repository. Git Push and Pull are most used operators while dealing with Clones.
+
+Forks is the way to collaborate on someone else's repository without changing the owner's repository. 
+
+Q. What is the benefit of having a copy of the last known state if the remote stored locally?
+
+Ans: Storing last known state of remote locally is essential to resolve conflict in case more than one person is working on repository.
+If only i made changes to the repository locally, i can always fast-forward merge using git pull and if some else updated remote then
+i can create a merge commit and push my changes.
+
+Q. How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Ans: The way to collborate could be over email. The only advantage is one could skip lerning Git and GitHub but then we have to manually
+type in all changes and communicate over email. Also the colloborator has to download the entire copy of codebase and manually review which 
+would be more cumbersome than to learn Git/GitHub.
+
+Q. When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Ans: When my project have multiple collborators and i want all my work get first reviewed from someone and only when other colloborator give it a green signal then only those changes to be merged. 
